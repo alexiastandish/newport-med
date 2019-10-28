@@ -22,7 +22,7 @@ const EaseInLeft = ({ target, children, triggerEaseIn }) => {
       {children.length > 1 ? (
         children.map(child => {
           return (
-            <StyledEaseInWrapper key={child.children} className={target}>
+            <StyledEaseInWrapper key={child.props.children} className={target}>
               {child}
             </StyledEaseInWrapper>
           );
@@ -54,7 +54,10 @@ const EaseInRight = ({ target, children, triggerEaseIn }) => {
       {children.length > 1 ? (
         children.map(child => {
           return (
-            <StyledEaseInWrapper key={child.children} className={target}>
+            <StyledEaseInWrapper
+              key={child.props.children || child.props.name}
+              className={target}
+            >
               {child}
             </StyledEaseInWrapper>
           );

@@ -8,3 +8,4 @@ export { ATag } from '../common/ATag';
 export { Subheader } from './Subheader';
 export { Button } from '../common/Button';
 export { Box } from '../common/Box';
+export { Input } from '../common/Input';

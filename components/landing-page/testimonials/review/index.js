@@ -3,25 +3,26 @@ import {
   StyledReview,
   StyledReviewHeader,
   StyledBlockQuote,
-  StyledReviewFooter,
   StyledReviewBody,
-  StyledReviewImg
+  StyledReviewImg,
+  StyledPerson
 } from './styles';
-import { Body } from '../../../../styles/common';
+import { Body, Subheader } from '../../../../styles/common';
 
 const Review = ({ person, position, image, review, currentSlide }) => {
   return (
     <StyledReview currentSlide={currentSlide}>
       <StyledReviewHeader>
         <StyledBlockQuote currentSlide={currentSlide}>&#8220;</StyledBlockQuote>
-        <StyledReviewImg>
+        <StyledReviewImg currentSlide={currentSlide}>
           <img src={image} alt={person} />
         </StyledReviewImg>
+        <StyledPerson currentSlide={currentSlide}>
+          <Subheader>{person}</Subheader>
+          <Body>{position}</Body>
+        </StyledPerson>
       </StyledReviewHeader>
       <StyledReviewBody>"{review}"</StyledReviewBody>
-      <StyledReviewFooter>
-        <Body>{person}</Body>
-      </StyledReviewFooter>
     </StyledReview>
   );
 };

@@ -17,7 +17,6 @@ const StyledLandingPageHero = styled(Hero)`
 `;
 
 const StyledHeroContentCol = styled(Column)`
-  height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

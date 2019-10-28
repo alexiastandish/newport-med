@@ -50,7 +50,8 @@ const Testimonials = ({ reviews }) => {
               withoutControls={true}
               wrapAround={true}
               autoplay={true}
-              autoplayInterval={3000}
+              autoplayInterval={4000}
+              dragging={false}
               beforeSlide={beforeSlide}
               cellSpacing={0}
               slidesToShow={3}
@@ -60,7 +61,10 @@ const Testimonials = ({ reviews }) => {
             >
               {reviews.map((review, idx) => {
                 return (
-                  <StyledReviewWrapper currentSlide={currentSlide === idx}>
+                  <StyledReviewWrapper
+                    currentSlide={currentSlide === idx}
+                    key={review.person}
+                  >
                     <Review
                       key={review.person}
                       person={review.person}
