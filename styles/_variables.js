@@ -4,7 +4,8 @@ const colors = {
   lightblue: '#e0fbfc',
   hightlightBlue: '#c9f8fa',
   black: '#576572',
-  gray: '#c1c1c1'
+  gray: '#c1c1c1',
+  bgGray: '#f3f3f3'
 };
 
 const buttonAndLinkHover = {

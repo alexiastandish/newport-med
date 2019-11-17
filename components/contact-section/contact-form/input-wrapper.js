@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import media from '../../../../styles/_media';
-import { Body } from '../../../../styles/common';
-import { colors } from '../../../../styles/_variables';
+import React, { Component } from "react";
+import styled from "styled-components";
+import media from "../../../styles/_media";
+import { Body } from "../../../styles/common";
+import { colors } from "../../../styles/_variables";
 
 const StyledFormInputWrapper = styled.div`
   min-height: 80px;
-  background: white;
-  width: 48%;
+  width: 100%;
+  input {
+    background: #ffffff;
+  }
+  textarea {
+    background: #ffffff;
+  }
+
   ${media.lg`
   width: 100%;
-`}
-
-  ${props => props.stretch && `width: 100%`}
+`} ${props => props.stretch && `width: 100%`};
 `;
 
 const StyledFormChildren = styled.div`

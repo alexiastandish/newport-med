@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { StyledBodyWrapper, StyledLayoutWrapper } from './styles';
-import Head from '../head';
-import Header from '../header';
+import React, { useState } from "react";
+import { StyledBodyWrapper, StyledLayoutWrapper } from "./styles";
+import Head from "../head";
+import Header from "../header";
+import Footer from "../footer";
+import ContactSection from "../contact-section";
 
 const Layout = props => {
   const { navLight, children } = props;
@@ -26,7 +28,8 @@ const Layout = props => {
         navLight={navLight}
       />
       <StyledBodyWrapper>{children}</StyledBodyWrapper>
-      {/* <Footer /> */}
+      <ContactSection />
+      <Footer />
     </StyledLayoutWrapper>
   );
 };

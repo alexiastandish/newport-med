@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import media from '../../../styles/_media';
-import { sizes } from '../../../styles/_sizes';
+import styled from "styled-components";
+import media from "../../../styles/_media";
+import { sizes } from "../../../styles/_sizes";
 
 const StyledDesktopNav = styled.div`
   font-family: Work Sans;

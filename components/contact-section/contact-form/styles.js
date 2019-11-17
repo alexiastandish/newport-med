@@ -1,10 +1,16 @@
-import styled from 'styled-components';
-import { colors } from '../../../../styles/_variables';
+import styled from "styled-components";
+import { colors } from "../../../styles/_variables";
 
 const StyledForm = styled.div`
   display: flex;
   flex-direction: column;
-
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  justify-items: flex-start;
+  align-items: flex-start;
   textarea {
     border-radius: 3px;
     ${props =>
@@ -28,6 +34,10 @@ const StyledForm = styled.div`
     font-size: 18px;
     font-weight: 400;
     transition: border 200ms ease;
+  }
+
+  button {
+    margin-top: 20px;
   }
 `;
 

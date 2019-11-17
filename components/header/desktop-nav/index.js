@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import {
   StyledDesktopNav,
   StyledNewportMedLogo,
   StyledNavLinksWrapper
-} from './styles';
-import Link from 'next/link';
-import { ATag } from '../../../styles/common';
+} from "./styles";
+import Link from "next/link";
+import { ATag } from "../../../styles/common";
 //import './.css';
 
-const DesktopNav = ({ stickyNav, router }) => {
+const DesktopNav = ({ stickyNav, router, navLight }) => {
   return (
-    <StyledDesktopNav stickyNav={stickyNav}>
+    <StyledDesktopNav stickyNav={stickyNav || navLight}>
       <StyledNewportMedLogo
         src="/static/images/logos/npm-logo.png"
         alt="newport-med"
-        onClick={() => router.push('/')}
+        onClick={() => router.push("/")}
       />
       <StyledNavLinksWrapper>
         <Link href="/about">

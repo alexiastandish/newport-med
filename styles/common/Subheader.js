@@ -1,6 +1,6 @@
-import media from '../_media';
-import styled from 'styled-components';
-import { colors } from '../_variables';
+import media from "../_media";
+import styled from "styled-components";
+import { colors } from "../_variables";
 
 const Subheader = styled.p`
   font-size: 24px;

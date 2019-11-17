@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Box, Body } from '../../../../styles/common';
-import { colors } from '../../../../styles/_variables';
+import styled from "styled-components";
+import { Box, Body } from "../../../../styles/common";
+import { colors } from "../../../../styles/_variables";
 
 const StyledReview = styled(Box)`
   overflow: hidden;
@@ -19,7 +19,7 @@ const StyledReviewBody = styled(Body)`
   text-indent: -0.4125em;
   margin: 0.5rem;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 30px;
 `;
 
 const StyledReviewHeader = styled.div`

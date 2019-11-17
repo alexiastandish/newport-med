@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { ThemeProvider, lightGradient, base } from '../../../styles/theme';
-import ScrollIntoView from '../../render-props/scroll-into-view';
+import React, { useState } from "react";
+import { ThemeProvider, lightGradient, base } from "../../styles/theme";
+import ScrollIntoView from "../render-props/scroll-into-view";
 import {
   Header,
   Container,
@@ -8,9 +8,9 @@ import {
   Subheader,
   Column,
   Hero
-} from '../../../styles/common';
-import { EaseInLeft, EaseInRight } from '../../../helpers/triggerAnimations';
-import ContactForm from './contact-form';
+} from "../../styles/common";
+import { EaseInLeft, EaseInRight } from "../../helpers/triggerAnimations";
+import ContactForm from "./contact-form";
 
 const ContactSection = props => {
   const [state, setAnimation] = useState(false);

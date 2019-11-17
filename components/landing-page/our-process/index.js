@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import { ThemeProvider, lightGradient, base } from '../../../styles/theme';
+import React, { useState } from "react";
+import { ThemeProvider, lightGradient, base } from "../../../styles/theme";
 import {
   Header,
   Container,
   Row,
   Button,
   Subheader
-} from '../../../styles/common';
-import { EaseInLeft, EaseInRight } from '../../../helpers/triggerAnimations';
+} from "../../../styles/common";
+import { EaseInLeft, EaseInRight } from "../../../helpers/triggerAnimations";
 
-import { StyledProcessHero, StyledCol, StyledContentCol } from './styles';
-import ScrollIntoView from '../../render-props/scroll-into-view';
+import { StyledProcessHero, StyledCol, StyledContentCol } from "./styles";
+import ScrollIntoView from "../../render-props/scroll-into-view";
+
+import Link from "next/link";
 
 const OurProcess = props => {
   const [state, setAnimation] = useState(false);
@@ -31,8 +33,12 @@ const OurProcess = props => {
               <StyledContentCol>
                 <EaseInRight triggerEaseIn={state} target="no-suprises">
                   <Header>No Surprises!</Header>
-                  <Subheader>Our Process: The NewportMed Way</Subheader>
-                  <Button type="primary">Learn more about our process</Button>
+                  <Subheader>Our Process: The NewportMed Way.</Subheader>
+                  <Button type="primary">
+                    <Link href="/process">
+                      <a>Learn more about our process</a>
+                    </Link>
+                  </Button>
                 </EaseInRight>
               </StyledContentCol>
             </Row>
