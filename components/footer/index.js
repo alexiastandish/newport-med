@@ -1,6 +1,6 @@
-import React from 'react';
-import { ThemeProvider, base, invert } from '../../styles/theme';
-import { Body, Row, Column } from '../../styles/common';
+import React from "react";
+import { ThemeProvider, base, invert } from "../../styles/theme";
+import { Body, Row, Column } from "../../styles/common";
 import {
   StyledFooterWrapper,
   StyledFooterContainer,
@@ -8,11 +8,9 @@ import {
   StyledLocationHeader,
   StyledFooterColumnLeft,
   StyledFooterColumnRight
-} from './styles';
+} from "./styles";
 
 const Footer = props => {
-  //   (800) 865-2490
-  // Josh@newportmed.com
   return (
     <ThemeProvider theme={invert(base)}>
       <StyledFooterWrapper>
@@ -40,6 +38,7 @@ const Footer = props => {
                     Orange, CA 92646
                   </Body>
                 </Column>
+
                 <Column>
                   <StyledLocationHeader color="white">
                     Texas

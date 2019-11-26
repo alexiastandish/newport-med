@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Hero, Box } from "../../styles/common";
+import { Hero, Box, Subheader } from "../../styles/common";
+import media from "../../styles/_media";
 
 const StyledServicesHero = styled(Hero)`
   background-image: url("/images/services/services-hero-bg.jpg");
@@ -12,6 +13,10 @@ const StyledServiceBoxes = styled.div`
   max-width: 900px;
   margin: 0 auto;
   margin-top: 30px;
+  ${media.sm`
+    flex-wrap: wrap;
+    justify-content: space-between;
+  `}
 `;
 
 const StyledServiceBox = styled(Box)`
@@ -29,6 +34,22 @@ const StyledServiceBox = styled(Box)`
   a {
     text-decoration: none;
   }
+
+  ${media.sm`
+  width: 48%;
+  margin: 0px;
+  margin-bottom: 20px;
+  `}
+
+  ${media.xs`
+  padding: 20px;
+  img {
+    margin-top: 0px;
+  }
+  ${Subheader}{
+    display: none;
+  }
+  `}
 `;
 
 export { StyledServicesHero, StyledServiceBoxes, StyledServiceBox };

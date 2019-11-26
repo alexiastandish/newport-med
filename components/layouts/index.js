@@ -27,7 +27,9 @@ const Layout = props => {
         menuOpen={state.menuOpen}
         navLight={navLight}
       />
-      <StyledBodyWrapper>{children}</StyledBodyWrapper>
+      <StyledBodyWrapper menuOpen={state.menuOpen}>
+        {children}
+      </StyledBodyWrapper>
       <ContactSection />
       <Footer />
     </StyledLayoutWrapper>

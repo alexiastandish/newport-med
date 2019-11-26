@@ -6,7 +6,8 @@ import {
   StyledBoxesRow,
   StyledServiceBox,
   StyledServiceIcon,
-  StyledBoxSubheader
+  StyledBoxSubheader,
+  StyledServicesContainer
 } from "./styles";
 import Link from "next/link";
 import { services } from "../../../../content/home-page.json";
@@ -14,7 +15,7 @@ import { services } from "../../../../content/home-page.json";
 const Services = props => {
   const [easeUpBoxesAnimation, easeUpBoxesAnimationFunc] = useState(false);
   return (
-    <Container>
+    <StyledServicesContainer>
       <ScrollIntoView returnFunc={easeUpBoxesAnimationFunc}>
         <StyledBoxesRow>
           <EaseInBottom triggerEaseIn={easeUpBoxesAnimation}>
@@ -94,7 +95,7 @@ const Services = props => {
           </EaseInBottom>
         </StyledBoxesRow>
       </ScrollIntoView>
-    </Container>
+    </StyledServicesContainer>
   );
 };
 export default Services;

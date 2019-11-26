@@ -15,11 +15,9 @@ const StyledValueBox = styled(Box)`
   text-align: left;
   width: 33%;
   ${media.md`
-    border: 1px solid green;
     width: 50%;
   `}
   ${media.smxs`
-  border: 1px solid pink;
   width: 100%;
   `}
 `;

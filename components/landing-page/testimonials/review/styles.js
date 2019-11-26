@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Box, Body } from "../../../../styles/common";
 import { colors } from "../../../../styles/_variables";
+import media from "../../../../styles/_media";
 
 const StyledReview = styled(Box)`
   overflow: hidden;
@@ -12,6 +13,10 @@ const StyledReview = styled(Box)`
   justify-content: flex-start;
   box-sizing: border-box;
   padding: 40px 25px;
+
+  ${media.smxs`
+    padding: 20px 10px;
+  `}
 `;
 
 const StyledReviewBody = styled(Body)`
@@ -27,15 +32,11 @@ const StyledReviewHeader = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
-`;
-
-const StyledBlockQuote = styled.h2`
-  ${props =>
-    props.currentSlide ? `  color: ${colors.red}` : `  color: ${colors.gray}`};
-  opacity: ${props => (props.currentSlide ? `1` : `.5`)};
-  font-size: 80px;
-  margin-bottom: -30px;
-  margin-right: 20px;
+  ${media.smxs`
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+`}
 `;
 
 const StyledReviewImg = styled.div`
@@ -55,6 +56,12 @@ const StyledReviewImg = styled.div`
         ? `opacity: 1`
         : `opacity: .2; filter: grayscale(100%)`};
   }
+
+  ${media.smxs`
+  height: 50px;
+  margin-top: -10px;
+  width: 50px;
+`}
 `;
 
 const StyledPerson = styled.div`
@@ -78,12 +85,23 @@ const StyledPerson = styled.div`
     line-height: 20px;
     color: ${colors.gray};
   }
+
+  ${media.smxs`
+  right: auto;
+  width:100%;
+  text-align: center;
+  position: relative;
+  p:nth-of-type(2) {
+    font-size: 12px;
+    line-height: 18px;
+    color: ${colors.gray};
+  }
+  `}
 `;
 
 export {
   StyledReview,
   StyledReviewHeader,
-  StyledBlockQuote,
   StyledReviewBody,
   StyledReviewImg,
   StyledPerson

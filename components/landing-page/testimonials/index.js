@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider, base, invert, centered } from "../../../styles/theme";
 import { Header, Container, Button, Subheader } from "../../../styles/common";
 import { StyledGradientHero } from "./styles";
 import { Waypoint } from "react-waypoint";
 import Carousel from "nuka-carousel";
 import Review from "./review";
-import { StyledReviewWrapper, StyledTestimonialsContainer } from "./styles";
+import {
+  StyledReviewWrapper,
+  StyledTestimonialsContainer,
+  StyledMobileResponsiveCarousel
+} from "./styles";
 
 const Testimonials = ({ reviews }) => {
   const [currentSlide, updateCurrentSlide] = useState(0);
@@ -50,7 +54,6 @@ const Testimonials = ({ reviews }) => {
               withoutControls={true}
               wrapAround={true}
               autoplay={true}
-              autoplayInterval={4000}
               dragging={false}
               beforeSlide={beforeSlide}
               cellSpacing={0}
@@ -77,11 +80,44 @@ const Testimonials = ({ reviews }) => {
                 );
               })}
             </Carousel>
-            <Waypoint onEnter={onEnter} onLeave={onLeave}>
-              <div />
-            </Waypoint>
           </StyledTestimonialsContainer>
         </StyledTestimonialsContainer>
+
+        <StyledMobileResponsiveCarousel>
+          <Header>What clients say</Header>
+          <Subheader>Hear from your peers that know us best.</Subheader>
+          <Carousel
+            withoutControls={true}
+            wrapAround={true}
+            autoplay={true}
+            autoplayInterval={4000}
+            dragging={false}
+            beforeSlide={beforeSlide}
+            cellSpacing={0}
+            slidesToShow={3}
+            slideWidth="300px"
+            cellAlign="center"
+            style={{ width: "100%" }}
+          >
+            {reviews.map((review, idx) => {
+              return (
+                <StyledReviewWrapper
+                  currentSlide={currentSlide === idx}
+                  key={review.person}
+                >
+                  <Review
+                    key={review.person}
+                    person={review.person}
+                    position={review.position}
+                    image={review.image}
+                    review={review.review}
+                    currentSlide={currentSlide === idx}
+                  />
+                </StyledReviewWrapper>
+              );
+            })}
+          </Carousel>
+        </StyledMobileResponsiveCarousel>
       </StyledGradientHero>
     </ThemeProvider>
   );

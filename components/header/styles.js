@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import media from "../../styles/_media";
 
 const StyledNavWrapper = styled.div`
   width: 100%;
-  transition: 400ms ease;
+  transition: all 0.3s ease-in;
   box-sizing: border-box;
   position: fixed;
   padding-top: 25px;

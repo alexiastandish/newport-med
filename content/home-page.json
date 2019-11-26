@@ -38,9 +38,10 @@
       }
     }
   ],
-  "our-process": {
+  "ourProcess": {
     "header": "No Surprises!",
     "subheader": "Our Process: The NewportMed Way.",
+    "desc": "Because our goal is to increase client revenue and decrease wasteful processes, we never stop refining and improving operations, products and services.",
     "button": { "text": "Learn more about our process", "link": "/process" }
   },
   "coreValues": {
@@ -62,7 +63,7 @@
       },
       {
         "value": "Honesty and Integrity",
-        "desc": "We believe in honesty and integrity in everything we do.",
+        "desc": "We believe in honesty and integrity in everything we do. ",
         "verse": "Psalms 25:21",
         "icon": "/images/icons/honesty.svg"
       },

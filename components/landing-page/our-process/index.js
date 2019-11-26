@@ -4,12 +4,18 @@ import {
   Header,
   Container,
   Row,
-  Button,
-  Subheader
+  ButtonLink,
+  Subheader,
+  Body
 } from "../../../styles/common";
 import { EaseInLeft, EaseInRight } from "../../../helpers/triggerAnimations";
-
-import { StyledProcessHero, StyledCol, StyledContentCol } from "./styles";
+import { ourProcess } from "../../../content/home-page.json";
+import {
+  StyledProcessHero,
+  StyledCol,
+  StyledContentCol,
+  StyledProcessContainer
+} from "./styles";
 import ScrollIntoView from "../../render-props/scroll-into-view";
 
 import Link from "next/link";
@@ -20,7 +26,7 @@ const OurProcess = props => {
     <ThemeProvider theme={lightGradient(base)}>
       <ScrollIntoView returnFunc={setAnimation}>
         <StyledProcessHero>
-          <Container>
+          <StyledProcessContainer>
             <Row>
               <StyledCol>
                 <EaseInLeft triggerEaseIn={state} target="gears-left">
@@ -31,18 +37,25 @@ const OurProcess = props => {
                 </EaseInLeft>
               </StyledCol>
               <StyledContentCol>
-                <EaseInRight triggerEaseIn={state} target="no-suprises">
-                  <Header>No Surprises!</Header>
-                  <Subheader>Our Process: The NewportMed Way.</Subheader>
-                  <Button type="primary">
-                    <Link href="/process">
-                      <a>Learn more about our process</a>
-                    </Link>
-                  </Button>
+                <EaseInRight
+                  triggerEaseIn={state}
+                  style={{ display: "flex" }}
+                  target="no-suprises"
+                >
+                  <Header>{ourProcess.header}</Header>
+                  <Subheader>{ourProcess.subheader}</Subheader>
+                  <Body>{ourProcess.desc}</Body>
+                  <br />
+
+                  <Link href={ourProcess.button.link}>
+                    <ButtonLink type="primary">
+                      {ourProcess.button.text}
+                    </ButtonLink>
+                  </Link>
                 </EaseInRight>
               </StyledContentCol>
             </Row>
-          </Container>
+          </StyledProcessContainer>
         </StyledProcessHero>
       </ScrollIntoView>
     </ThemeProvider>

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Hero, Container, Body, Column } from '../../styles/common';
-import media from '../../styles/_media';
+import styled from "styled-components";
+import { Hero, Container, Body, Column } from "../../styles/common";
+import media from "../../styles/_media";
 
 const StyledFooterWrapper = styled(Hero)`
   min-height: 1px;
@@ -19,6 +19,9 @@ const StyledFooterLogo = styled.img`
 const StyledLocationHeader = styled(Body)`
   text-transform: uppercase;
   letter-spacing: 1px;
+  ${media.md`
+  margin-top: 25px;
+  `}
 `;
 
 const StyledFooterColumnLeft = styled(Column)`

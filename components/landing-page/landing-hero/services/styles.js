@@ -1,10 +1,6 @@
-import styled from 'styled-components';
-import { Row, Box, Subheader } from '../../../../styles/common';
-
-const StyledBoxesRow = styled(Row)`
-  max-width: 900px;
-  margin: 0 auto;
-`;
+import styled from "styled-components";
+import { Row, Box, Subheader, Container } from "../../../../styles/common";
+import media from "../../../../styles/_media";
 
 const StyledServiceBox = styled(Box)`
   display: flex;
@@ -13,9 +9,10 @@ const StyledServiceBox = styled(Box)`
   flex-direction: column;
   box-sizing: border-box;
   padding: 35px 30px;
-  width: 425px;
+  width: 410px;
   height: 350px;
-  margin-bottom: 30px;
+
+  margin-bottom: 25px;
   position: relative;
 
   h1 {
@@ -26,6 +23,24 @@ const StyledServiceBox = styled(Box)`
     position: absolute;
     bottom: 30px;
   }
+
+  ${media.md`
+  width: 350px;
+  height: 350px;
+  `}
+  ${media.xs`
+  width: 300px;
+  height: auto;
+  `}
+`;
+
+const StyledBoxesRow = styled(Row)`
+  max-width: 850px;
+  margin: 0 auto;
+
+  ${media.md`
+  justify-content: space-around;
+  `}
 `;
 
 const StyledServiceIcon = styled.div`
@@ -38,16 +53,29 @@ const StyledServiceIcon = styled.div`
     height: 100%;
     height: auto;
   }
+
+  ${media.md`
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+  `}
 `;
 
 const StyledBoxSubheader = styled(Subheader)`
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-top: 0px;
+`;
+
+const StyledServicesContainer = styled(Container)`
+  ${media.md`
+    margin-top: -200px;
+  `}
 `;
 
 export {
   StyledBoxesRow,
   StyledServiceBox,
   StyledServiceIcon,
-  StyledBoxSubheader
+  StyledBoxSubheader,
+  StyledServicesContainer
 };

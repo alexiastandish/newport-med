@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import media from '../_media';
-import { sizes } from '../_sizes';
+import styled from "styled-components";
+import media from "../_media";
+import { sizes } from "../_sizes";
 
 const Container = styled.section`
   box-sizing: border-box;
@@ -34,6 +34,8 @@ const Container = styled.section`
 
   ${media.xs`
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 15px;
   padding-right: 15px;
   `};

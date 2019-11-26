@@ -1,6 +1,6 @@
-import React from 'react';
-import set from 'lodash/set';
-import has from 'lodash/has';
+import React from "react";
+import set from "lodash/set";
+import has from "lodash/has";
 
 const enhancedReducer = (state, updateArg) => {
   // check if the type of update argument is a callback function
@@ -12,7 +12,7 @@ const enhancedReducer = (state, updateArg) => {
   if (updateArg.constructor === Object) {
     // does the update object have _path and _value as it's keys
     // if yes then use them to update deep object values
-    if (has(updateArg, '_path') && has(updateArg, '_value')) {
+    if (has(updateArg, "_path") && has(updateArg, "_value")) {
       const { _path, _value } = updateArg;
 
       return produce(state, draft => {
@@ -25,15 +25,14 @@ const enhancedReducer = (state, updateArg) => {
 };
 
 const useFormState = initialState => {
-  console.log('initialState', initialState);
   const [state, updateState] = React.useReducer(enhancedReducer, initialState);
 
   const updateForm = React.useCallback(({ target: { value, name, type } }) => {
-    const updatePath = name.split('.');
+    const updatePath = name.split(".");
 
     // if the input is a checkbox then use callback function to update
     // the toggle state based on previous state
-    if (type === 'checkbox') {
+    if (type === "checkbox") {
       updateState(prevState => ({
         [name]: !prevState[name]
       }));

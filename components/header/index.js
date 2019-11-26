@@ -5,8 +5,16 @@ import { StyledNavWrapper } from "./styles";
 import { withRouter } from "next/router";
 
 import DesktopNav from "./desktop-nav";
+import MobileNav from "./mobile-nav";
 
-const Header = props => {
+const Header = ({
+  menuOpen,
+  handleMenuToggle,
+  navLight,
+  router,
+  user,
+  ...props
+}) => {
   const [stickyNav, setStickyNav] = useState(false);
 
   const getPosition = ({ currentPosition, previousPosition }) => {
@@ -22,11 +30,18 @@ const Header = props => {
   return (
     <Waypoint onPositionChange={getPosition}>
       <div style={{ position: "relative", zIndex: 5 }}>
-        <StyledNavWrapper stickyNav={stickyNav || props.navLight}>
+        <StyledNavWrapper menuOpen={menuOpen} stickyNav={stickyNav || navLight}>
           <DesktopNav
             stickyNav={stickyNav}
-            navLight={props.navLight}
-            router={props.router}
+            navLight={navLight}
+            router={router}
+          />
+          <MobileNav
+            menuOpen={menuOpen}
+            handleMenuToggle={handleMenuToggle}
+            stickyNav={stickyNav}
+            navLight={navLight}
+            router={router}
           />
         </StyledNavWrapper>
       </div>

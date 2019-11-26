@@ -36,11 +36,11 @@ const getButtonStyles = type => {
   }
 };
 
-const ButtonLink = ({ label, ...props }) => {
-  return <StyledButtonLink {...props}>{props.children}</StyledButtonLink>;
-};
+// const ButtonLink = ({ label, ...props }) => {
+//   return <StyledButtonLink {...props}>{props.children}</StyledButtonLink>;
+// };
 
-const StyledButtonLink = styled.a`
+const ButtonLink = styled.a`
 text-transform: uppercase;
 font-family: Work Sans;
 font-weight 400;

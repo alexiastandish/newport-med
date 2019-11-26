@@ -12,7 +12,7 @@ const DesktopNav = ({ stickyNav, router, navLight }) => {
   return (
     <StyledDesktopNav stickyNav={stickyNav || navLight}>
       <StyledNewportMedLogo
-        src="/static/images/logos/npm-logo.png"
+        src="/images/logos/npm-logo.png"
         alt="newport-med"
         onClick={() => router.push("/")}
       />

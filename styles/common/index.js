@@ -10,3 +10,4 @@ export { Button } from "../common/Button";
 export { ButtonLink } from "../common/ButtonLink";
 export { Box } from "../common/Box";
 export { Input } from "../common/Input";
+export { StyledBlockQuote } from "../common/StyledBlockQuote";

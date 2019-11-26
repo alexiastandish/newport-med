@@ -39,16 +39,16 @@ const About = props => {
                 <br />
                 <Body>
                   NewportMed was founded in 2004 with a focus on surgical
-                  specialties. In 2016 we formed OmniMed Solutions, Pvt. Ltd. in
-                  Hyderabad, India to give us a work force that can easily scale
-                  to focus on specific areas of the non-patience facing aspect
-                  of Healthcare that demands volume, focus and integrity.
-                  Instead of focusing on one aspect of the practice, our
-                  partnership brings expertise on multiple levels to ensure
-                  financial stability and promote growth. Utilizing technology
-                  and process efficiency, as key resources, we are able to
-                  capture our client’s revenue while minimizing their staffing
-                  overhead and other associated costs.
+                  specialties. In 2016, we formed OmniMed Solutions, Pvt. Ltd.
+                  in Hyderabad, India to give us a work force that can scale so
+                  we can focus on specific areas of the non-patient facing
+                  aspects of Healthcare that demand volume, data driven
+                  processes and integrity. Instead of focusing on one aspect of
+                  the practice, our partnership brings expertise on multiple
+                  levels to ensure financial stability and promote growth.
+                  Utilizing technology and process efficiency as key resources,
+                  we are able to capture our clients’ revenue while minimizing
+                  their staffing overhead and other associated costs.
                 </Body>
               </Column>
               <Column cols={2}>
@@ -59,7 +59,7 @@ const About = props => {
                   clients will tell you that we focus on every aspect of the RCM
                   process from beginning to end. We help them maximize their
                   revenue goals and minimize their expenditures. We do this by
-                  touching every part of our clients’ practices from appointment
+                  managing every part of our clients’ practices from appointment
                   scheduling, pre-surgical payment capture, authorizations,
                   benefit validation, coding, data analytics and reporting, and
                   proactive feedback, which we call a “Value-Add.”

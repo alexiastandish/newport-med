@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   StyledReview,
   StyledReviewHeader,
-  StyledBlockQuote,
   StyledReviewBody,
   StyledReviewImg,
   StyledPerson
-} from './styles';
-import { Body, Subheader } from '../../../../styles/common';
+} from "./styles";
+import { Body, Subheader, StyledBlockQuote } from "../../../../styles/common";
 
 const Review = ({ person, position, image, review, currentSlide }) => {
   return (
