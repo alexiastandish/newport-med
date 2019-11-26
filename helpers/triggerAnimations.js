@@ -74,7 +74,13 @@ const EaseInRight = ({ target, children, triggerEaseIn, style }) => {
   );
 };
 
-const EaseInBottom = ({ beginAnimation, children, triggerEaseIn, style }) => {
+const EaseInBottom = ({
+  beginAnimation,
+  children,
+  triggerEaseIn,
+  style,
+  className
+}) => {
   const triggerAnimation = () => {
     triggerEaseIn &&
       anime({
@@ -92,7 +98,7 @@ const EaseInBottom = ({ beginAnimation, children, triggerEaseIn, style }) => {
   useEffect(triggerAnimation, [beginAnimation, triggerEaseIn]);
 
   return (
-    <div style={style}>
+    <div style={style} className={className}>
       {children.length > 1 ? (
         children.map(child => {
           return (

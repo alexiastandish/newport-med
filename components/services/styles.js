@@ -5,6 +5,7 @@ import media from "../../styles/_media";
 const StyledServicesHero = styled(Hero)`
   background-image: url("/images/services/services-hero-bg.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 `;
 
 const StyledServiceBoxes = styled.div`

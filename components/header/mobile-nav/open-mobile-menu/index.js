@@ -10,15 +10,15 @@ const OpenMobileMenu = ({ menuOpen, handleMenuToggle, ...props }) => {
   const navLinks = [
     {
       slug: "/about",
-      link: "About"
+      link: "About Us"
     },
     {
       slug: "/process",
-      link: "Process"
+      link: "Our Process"
     },
     {
       slug: "/services",
-      link: "Services"
+      link: "Our Services"
     },
     {
       slug: "/testimonials",

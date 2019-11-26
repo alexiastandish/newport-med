@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider, base } from "../styles/theme";
 import { centered } from "../styles/theme/_layout";
 import { Container, Header, Subheader, Box } from "../styles/common";
@@ -15,7 +15,12 @@ import CloudBasedServices from "../components/services/cloud-based-services";
 import SolutionsIntegration from "../components/services/solutions-integration";
 import PracticeAdvocates from "../components/services/practice-advocates";
 
+import { EaseInBottom } from "../helpers/triggerAnimations";
+
+import anime from "animejs";
+
 const Services = props => {
+  const [beginAnimation, triggerAnimationFunc] = useState(false);
   const setSection = section => {
     let target = document.getElementById(section);
     if (target) {
@@ -25,17 +30,40 @@ const Services = props => {
       });
     }
   };
+
+  beginAnimation &&
+    anime({
+      targets: ".ease-in-bottom",
+      translateY: [100, 0],
+      easing: "easeOutQuad",
+      duration: 700,
+      autoplay: false,
+      loop: false,
+      opacity: [0, 1],
+      delay: anime.stagger(150, { start: 600 })
+    }).play();
+
+  useEffect(() => {
+    triggerAnimationFunc(true);
+  }, beginAnimation);
+
   return (
     <Layout>
       <ThemeProvider theme={base}>
         <StyledServicesHero layout={centered}>
           <Container>
-            <Header>{hero.header}</Header>
-            <Subheader>{hero.subheader}</Subheader>
+            <EaseInBottom
+              triggerEaseIn={beginAnimation}
+              className="services-heading"
+            >
+              <Header>{hero.header}</Header>
+              <Subheader>{hero.subheader}</Subheader>
+            </EaseInBottom>
             <StyledServiceBoxes>
               {hero.services.map(service => {
                 return (
                   <StyledServiceBox
+                    className="ease-in-bottom"
                     onClick={() => setSection(service.link)}
                     key={service.service}
                   >

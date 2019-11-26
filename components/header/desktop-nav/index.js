@@ -18,13 +18,13 @@ const DesktopNav = ({ stickyNav, router, navLight }) => {
       />
       <StyledNavLinksWrapper>
         <Link href="/about">
-          <ATag>About</ATag>
+          <ATag>About Us</ATag>
         </Link>
         <Link href="/process">
-          <ATag>Process</ATag>
+          <ATag>Our Process</ATag>
         </Link>
         <Link href="/services">
-          <ATag>Services</ATag>
+          <ATag>Our Services</ATag>
         </Link>
         <Link href="/testimonials">
           <ATag>Testimonials</ATag>

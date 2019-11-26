@@ -63,7 +63,11 @@ const Testimonials = props => {
                   triggerEaseIn={true}
                 >
                   <StyledHeroTestimonial columns={1}>
-                    <StyledBlockQuote>&#8220;</StyledBlockQuote>
+                    <StyledBlockQuote
+                      style={{ textAlign: "left", marginLeft: "0px" }}
+                    >
+                      &#8220;
+                    </StyledBlockQuote>
                     <Subheader style={{ marginTop: 5, marginBottom: 5 }}>
                       {testimonials[slideIdx].review}
                     </Subheader>

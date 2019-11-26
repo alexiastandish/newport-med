@@ -6,6 +6,11 @@ import media from "../../styles/_media";
 const StyledTestimonialsHero = styled(Hero)`
   min-height: 600px;
   height: 600px;
+
+  ${media.sm`
+  height: auto;
+  padding-top: 50px;
+  `}
 `;
 const StyledTestimonialsContainer = styled(Container)`
   padding-top: 30px;
@@ -16,6 +21,10 @@ const StyledHeroTestimonial = styled(Box)`
   padding: 10px 30px 20px 30px;
   box-sizing: border-box;
   width: 100%;
+
+  ${media.sm`
+    margin-top: 50px;
+  `}
 `;
 
 const StyledHeroTestimonialInfo = styled.div`
@@ -46,6 +55,7 @@ const StyledTestimonialBox = styled(Box)`
   font-family: Work Sans;
   padding: 20px;
   border: 1px solid transparent;
+  margin: 0 auto;
 
   .person {
     text-transform: uppercase;
@@ -67,6 +77,10 @@ const StyledTestimonialBox = styled(Box)`
   }
 
   transition: 0.2s all linear;
+
+  ${media.sm`
+    width: 100%;
+  `}
 `;
 
 const StyledTestimonialsList = styled.div`
@@ -75,8 +89,30 @@ const StyledTestimonialsList = styled.div`
   height: 800px;
   flex-wrap: wrap;
 
+  .styled-box-cols {
+    width: 33.3%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
   ${media.xl`
     height: 1000px;
+  `}
+  ${media.lg`
+    height: 1100px;
+  `}
+  ${media.md`
+      height: 1550px;
+  .styled-box-cols {
+    width: 50%;
+  }
+  `}
+
+  ${media.sm`
+  height: auto;
+  .styled-box-cols {
+    width: 100%;
+  }
   `}
 `;
 

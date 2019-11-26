@@ -3,7 +3,6 @@ import { Body, Hero } from "../../styles/common";
 import { ThemeProvider } from "../../styles/theme";
 import {
   StyledTestimonialsContainer,
-  StyledTestimonialsHero,
   StyledTestimonialBox,
   StyledTestimonialsList
 } from "./styles";
@@ -23,11 +22,7 @@ const TestimonialsList = ({ setSlide, testimonials }) => {
                   <EaseInBottom
                     triggerEaseIn={easeUpBoxesAnimation}
                     key={testimonial.person}
-                    style={{
-                      width: "33.3%",
-                      marginBottom: "15px",
-                      boxSizing: "border-box"
-                    }}
+                    className="styled-box-cols"
                   >
                     <StyledTestimonialBox
                       columns={1}
