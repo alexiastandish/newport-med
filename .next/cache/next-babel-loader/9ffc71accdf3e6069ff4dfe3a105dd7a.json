@@ -1,0 +1,1 @@
+{"ast":null,"code":"const centered = {\n  textAlign: 'center',\n  direction: 'column',\n  justify: 'center'\n};\nconst leftAlign = {\n  textAlign: 'left',\n  direction: 'row',\n  justify: 'flex-start'\n};\nexport { centered, leftAlign };","map":null,"metadata":{},"sourceType":"module"}

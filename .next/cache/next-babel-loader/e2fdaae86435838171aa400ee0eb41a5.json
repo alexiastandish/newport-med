@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nimport media from \"../../styles/_media\";\nconst StyledNMEImg = styled.img.withConfig({\n  displayName: \"styles__StyledNMEImg\",\n  componentId: \"sc-123ip32-0\"\n})([\"margin:0 auto;width:80%;\", \"\"], media.smxs`\n    width: 100%;\n  `);\nexport { StyledNMEImg };","map":null,"metadata":{},"sourceType":"module"}

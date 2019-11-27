@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const sizes = {\n  xl: 1440,\n  lg: 1090,\n  md: 900,\n  sm: 700,\n  smxs: 590,\n  xs: 480\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,140 @@
+webpackHotUpdate("static/development/pages/process.js",{
+
+/***/ "./components/process/styles.js":
+/*!**************************************!*\
+  !*** ./components/process/styles.js ***!
+  \**************************************/
+/*! exports provided: StyledNMEImg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledNMEImg", function() { return StyledNMEImg; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var StyledNMEImg = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img.withConfig({
+  displayName: "styles__StyledNMEImg",
+  componentId: "sc-123ip32-0"
+})(["margin:0 auto;width:80%;"]);
+
+
+/***/ }),
+
+/***/ "./pages/process.js":
+/*!**************************!*\
+  !*** ./pages/process.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/theme */ "./styles/theme/index.js");
+/* harmony import */ var _styles_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/common */ "./styles/common/index.js");
+/* harmony import */ var _components_layouts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layouts */ "./components/layouts/index.js");
+/* harmony import */ var _components_process_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/process/styles */ "./components/process/styles.js");
+var _jsxFileName = "/Users/alexiastandish/Desktop/Freelance Clients/NewportMed/newportmed/pages/process.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+var Process = function Process(props) {
+  //
+  return __jsx(_components_layouts__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, __jsx(_styles_theme__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+    theme: Object(_styles_theme__WEBPACK_IMPORTED_MODULE_1__["lightGradient"])(_styles_theme__WEBPACK_IMPORTED_MODULE_1__["base"]),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Hero"], {
+    layout: _styles_theme__WEBPACK_IMPORTED_MODULE_1__["centered"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Our goal is to increase client revenue and decrease wasteful processes."), __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Subheader"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "The latest technology and proprietary processes are used to ensure all charges are captured, documented, submitted and paid."), __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Body"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "The latest technology and proprietary processes are used to ensure all charges are captured, documented, submitted and paid. We rank in the top 5% in all of the most important MGMA benchmarks, and we continue to make strides in the areas of accuracy, turnaround time and revenue maximization. We believe in doing it right the first time!")))), __jsx(_styles_theme__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"], {
+    theme: _styles_theme__WEBPACK_IMPORTED_MODULE_1__["base"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Hero"], {
+    layout: _styles_theme__WEBPACK_IMPORTED_MODULE_1__["centered"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "The NewportMed Effect"), __jsx(_styles_common__WEBPACK_IMPORTED_MODULE_2__["Subheader"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, "We never stop refining and improving operations, products and services."), __jsx(_components_process_styles__WEBPACK_IMPORTED_MODULE_4__["StyledNMEImg"], {
+    src: "/images/process/newportmed-effect-process.jpg",
+    alt: "newportmed-effect",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Process);
+
+/***/ })
+
+})
+//# sourceMappingURL=process.js.2fe40850613af95b7ac3.hot-update.js.map
